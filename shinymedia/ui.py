@@ -1,3 +1,5 @@
+from typing import Optional
+
 import base64
 import math
 import os
@@ -27,9 +29,9 @@ def input_video_clip(
     id: str,
     *,
     reset_on_record: bool = True,
-    mime_type: str | None = None,
-    video_bits_per_second: int | None = None,
-    audio_bits_per_second: int | None = None,
+    mime_type: Optional[str] = None,
+    video_bits_per_second: Optional[int] = None,
+    audio_bits_per_second: Optional[int] = None,
     **kwargs: TagAttrValue,
 ):
     """
